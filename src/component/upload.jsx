@@ -2,7 +2,7 @@ import React from 'react';
 import { DatePicker } from 'antd';
 
 class Upload extends React.Component {
-    handleClick =()=>{
+    handleClick(){
         console.log("1121")
     }
     render(){
