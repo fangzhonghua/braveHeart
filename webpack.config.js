@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -8,6 +9,9 @@ module.exports = {
     filename: 'bundle.js'
   },
   devtool: 'source-map',
+  devServer:{
+    contentBase:'./dist'
+  },
   module: {
     rules: [
       {
@@ -25,5 +29,11 @@ module.exports = {
       }
 
     ]
-  }
+  },
+  plugins:[
+    new HtmlWebpackPlugin({
+      title:"勇敢的心",
+      template:"src/assets/index.html"
+    })
+  ]
 };
