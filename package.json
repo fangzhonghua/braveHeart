@@ -49,6 +49,6 @@
     }
   },
   "lint-staged":{
-    "*":"echo 'husky' && npm run lint"
+    "src/**/*.{js,jsx}":"eslint"
   }
 }
