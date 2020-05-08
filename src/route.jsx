@@ -3,11 +3,11 @@ import {Route, Switch } from "react-router";
 import { BrowserRouter, Link} from "react-router-dom";
 import Home from "./component/home.jsx";
 import Start from "./component/start.jsx";
-import Upload from "./component/upload.jsx";
+import UploadPage from "./component/upload.jsx";
 import NoMatch from "./component/noMatch.jsx";
 
 const Routes = () => {
-  return <BrowserRouter basename="/admin" forceRefresh={false}>
+  return <BrowserRouter basename="/admin" forceRefresh={true}>
     <Switch>
       <Route exact path="/">
         <Home />
@@ -17,7 +17,7 @@ const Routes = () => {
       </Route>
       <Route path="/upload">
         <Link to="/upload">uploadlink</Link>
-        <Upload />
+        <UploadPage />
       </Route>
       <Route path="*" >
         <NoMatch/>
