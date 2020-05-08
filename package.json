@@ -22,6 +22,7 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-import": "^1.13.0",
     "css-loader": "^3.5.3",
@@ -48,7 +49,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged":{
-    "src/**/*.{js,jsx}":"eslint"
+  "lint-staged": {
+    "src/**/*.{js,jsx}": "eslint"
   }
 }

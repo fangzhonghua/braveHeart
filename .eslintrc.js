@@ -3,6 +3,7 @@ module.exports = {
         "browser": true,
         "es6": true
     },
+    "parser":"babel-eslint",
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended"
@@ -34,5 +35,6 @@ module.exports = {
 
         // disable rules from base configurations
         "no-console": "off",
-    }
+
+      }
 };
